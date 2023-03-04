@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/routePage">
+        <file>src/icon/connect.png</file>
+    </qresource>
+</RCC>

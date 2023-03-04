@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/MetroSH">
+        <file>src/icon/add.png</file>
+        <file>src/icon/all.png</file>
+        <file>src/icon/connect.png</file>
+        <file>src/icon/enlarge.png</file>
+        <file>src/icon/help.png</file>
+        <file>src/icon/map.png</file>
+        <file>src/icon/metro-shanghai.png</file>
+        <file>src/icon/mouse.png</file>
+        <file>src/icon/qt.png</file>
+        <file>src/icon/query.png</file>
+        <file>src/icon/shrink.png</file>
+        <file>src/icon/splash.png</file>
+        <file>src/icon/station.png</file>
+        <file>src/icon/subway.png</file>
+        <file>src/icon/text.png</file>
+        <file>src/icon/exit.png</file>
+        <file>src/icon/restart.png</file>
+        <file>src/icon/toolBar.png</file>
+        <file>src/icon/graphShow.png</file>
+        <file>src/icon/author.png</file>
+    </qresource>
+</RCC>

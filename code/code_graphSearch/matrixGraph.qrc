@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/matrixGraph">
+        <file>image/icon.png</file>
+        <file>image/input.png</file>
+    </qresource>
+</RCC>

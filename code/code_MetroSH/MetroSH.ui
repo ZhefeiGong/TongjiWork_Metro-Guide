@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MetroSHClass</class>
+ <widget class="QMainWindow" name="MetroSHClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>地铁指南</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="MetroSH.qrc">
+    <normaloff>:/MetroSH/src/icon/subway.png</normaloff>:/MetroSH/src/icon/subway.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>400</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="myQGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="actionRestart"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTool">
+    <property name="title">
+     <string>工具(T)</string>
+    </property>
+    <addaction name="actionExpand"/>
+    <addaction name="actionShrink"/>
+    <addaction name="actionAddStation"/>
+    <addaction name="actionAddRoute"/>
+    <addaction name="actionGraphShow"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>视图(V)</string>
+    </property>
+    <addaction name="actionToolBar"/>
+    <addaction name="actionChangeGuide"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>关于(A)</string>
+    </property>
+    <addaction name="actionAboutProject"/>
+    <addaction name="actionAboutAuthor"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTool"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>18</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExpand"/>
+   <addaction name="actionShrink"/>
+   <addaction name="actionAddStation"/>
+   <addaction name="actionAddRoute"/>
+   <addaction name="actionGraphShow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="changeGuideArea">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>170</width>
+     <height>323</height>
+    </size>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>换乘指南</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="changeGuideWidget">
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>300</height>
+     </size>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_3" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="startLabel">
+             <property name="text">
+              <string>起点站</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="startBox">
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+             <property name="currentText">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>请选择起点站</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="endLabel">
+             <property name="text">
+              <string>终点站</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="endBox">
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+             <property name="currentText">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>请选择终点站</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="changesMinButton">
+             <property name="text">
+              <string>换乘最少</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="timeMinButton">
+             <property name="text">
+              <string>路线最短</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QPushButton" name="searchButton">
+             <property name="text">
+              <string>查询路线</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="serchTextArea"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionRestart">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/restart.png</normaloff>:/MetroSH/src/icon/restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/exit.png</normaloff>:/MetroSH/src/icon/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionExpand">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/enlarge.png</normaloff>:/MetroSH/src/icon/enlarge.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actionShrink">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/shrink.png</normaloff>:/MetroSH/src/icon/shrink.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actionToolBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/toolBar.png</normaloff>:/MetroSH/src/icon/toolBar.png</iconset>
+   </property>
+   <property name="text">
+    <string>工具栏</string>
+   </property>
+  </action>
+  <action name="actionChangeGuide">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/query.png</normaloff>:/MetroSH/src/icon/query.png</iconset>
+   </property>
+   <property name="text">
+    <string>换乘指南</string>
+   </property>
+  </action>
+  <action name="actionGraphShow">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/graphShow.png</normaloff>:/MetroSH/src/icon/graphShow.png</iconset>
+   </property>
+   <property name="text">
+    <string>展示全线</string>
+   </property>
+  </action>
+  <action name="actionAddStation">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/station.png</normaloff>:/MetroSH/src/icon/station.png</iconset>
+   </property>
+   <property name="text">
+    <string>站点管理</string>
+   </property>
+   <property name="toolTip">
+    <string>站点管理</string>
+   </property>
+  </action>
+  <action name="actionAddRoute">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/connect.png</normaloff>:/MetroSH/src/icon/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>线路管理</string>
+   </property>
+   <property name="toolTip">
+    <string>线路管理</string>
+   </property>
+  </action>
+  <action name="actionAboutProject">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/map.png</normaloff>:/MetroSH/src/icon/map.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于项目</string>
+   </property>
+  </action>
+  <action name="actionAboutAuthor">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/author.png</normaloff>:/MetroSH/src/icon/author.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于作者</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="MetroSH.qrc">
+     <normaloff>:/MetroSH/src/icon/help.png</normaloff>:/MetroSH/src/icon/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>基本介绍</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>myQGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>myqgraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MetroSH.qrc"/>
+ </resources>
+ <connections/>
+</ui>
