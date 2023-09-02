@@ -6,7 +6,7 @@ And you're able to search the route from A to B with inputting some information.
 Updating and deleting the info of ShangHai metro will be easy to finish.
 BTW, I have completed a small program about graph search, before the project.
 
-Here are some introduction.
+Here are some introductions.
 ### Info
 #### 1. graph search
 
