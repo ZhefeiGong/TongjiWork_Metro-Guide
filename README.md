@@ -10,12 +10,12 @@ BTW, I have completed a small program about `graph search`, before the project.
 Here's some info.
 ### OVERVIEW
 #### 1. graph search
-<img src="quickLook/graphSearch1.jpg" width="500">
-<img src="quickLook/graphSearch2.jpg" width="500">
-<img src="quickLook/graphSearch3.jpg" width="500">
+<img src="quickLook/graphSearch1.jpg" width="600">
+<img src="quickLook/graphSearch2.jpg" width="600">
+<img src="quickLook/graphSearch3.jpg" width="600">
+
 #### 2. Metro SH
-<img src="quickLook/Metro1" width="500">
-<img src="quickLook/Metro2" width="500">
-<img src="quickLook/Metro3" width="500">
-<img src="quickLook/Metro4" width="500">
-<img src="quickLook/Metro5" width="500">
+<img src="quickLook/Metro1.jpg" width="600">
+<img src="quickLook/Metro2.jpg" width="600">
+<img src="quickLook/Metro3.jpg" width="600">
+<img src="quickLook/Metro4.jpg" width="600">
