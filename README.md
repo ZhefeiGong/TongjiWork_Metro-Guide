@@ -20,3 +20,6 @@ Here's some info.
 <img src="quickLook/graphSearch1.jpg" width="600">
 <img src="quickLook/graphSearch2.jpg" width="600">
 <img src="quickLook/graphSearch3.jpg" width="600">
+
+### REFERENCE
+> 100165 数据结构课程设计 暑期大作业
